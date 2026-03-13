@@ -1,0 +1,34 @@
+<header class="fixed top-0 z-50 w-full border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-20 lg:px-40 py-4 transition-colors">
+<div class="flex items-center justify-between max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="size-10 flex items-center justify-center rounded-full overflow-hidden shadow-inner">
+<img src="assets/logo_personal.png" alt="KR Logo" class="w-full h-full object-cover" />
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold tracking-tight">Chris Rodriguez</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#home">Inicio</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#skills">Habilidades</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#education">Educación</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#projects">Proyectos</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#contact">Contacto</a>
+</nav>
+<div class="flex items-center gap-4">
+<button id="theme-toggle" class="p-2 rounded-lg bg-slate-200 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors text-slate-700 dark:text-slate-300">
+<span id="theme-icon" class="material-symbols-outlined text-xl block">light_mode</span>
+</button>
+<button id="mobile-menu-btn" class="md:hidden p-2 text-slate-800 dark:text-slate-100 transition-transform">
+<span class="material-symbols-outlined text-2xl block">menu</span>
+</button>
+</div>
+</div>
+
+<!-- Mobile Menu (Hidden by default) -->
+<div id="mobile-menu" class="hidden md:hidden absolute top-[100%] left-0 w-full bg-background-light dark:bg-background-dark border-b border-primary/20 p-6 flex-col gap-6 shadow-xl transition-all">
+<a class="mobile-link text-slate-600 dark:text-slate-300 hover:text-primary text-lg font-bold" href="#home">Inicio</a>
+<a class="mobile-link text-slate-600 dark:text-slate-300 hover:text-primary text-lg font-bold" href="#skills">Habilidades</a>
+<a class="mobile-link text-slate-600 dark:text-slate-300 hover:text-primary text-lg font-bold" href="#education">Educación</a>
+<a class="mobile-link text-slate-600 dark:text-slate-300 hover:text-primary text-lg font-bold" href="#projects">Proyectos</a>
+<a class="mobile-link text-slate-600 dark:text-slate-300 hover:text-primary text-lg font-bold" href="#contact">Contacto</a>
+</div>
+</header>
