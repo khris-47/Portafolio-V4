@@ -74,6 +74,30 @@ function initializeInteractions() {
         });
     }
 
+    // ---- Contact Form Logic ----
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contact-name').value;
+            const email = document.getElementById('contact-email').value;
+            const subject = document.getElementById('contact-subject').value;
+            const message = document.getElementById('contact-message').value;
+            
+            const targetEmail = 'rodriguezchris808@gmail.com'; // Recipient email address
+            
+            // Construct the email body
+            const body = `Nombre: ${name}\nCorreo: ${email}\n\nMensaje:\n${message}`;
+            
+            // Create the mailto link
+            const mailtoLink = `mailto:${targetEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Open the default email client
+            window.location.href = mailtoLink;
+        });
+    }
+
     // ---- Skills Filter Logic ----
     const filterBtns = document.querySelectorAll('.filter-btn');
     const skillCards = document.querySelectorAll('.skill-card');
