@@ -1,17 +1,37 @@
 body {
     font-family: 'Space Grotesk', sans-serif;
 }
+
 .custom-gradient-bg {
     /* Instead of filling the container abruptly, let's create a soft radial glow 
        that fades completely to transparent well before the edges.
        Using a wider ellipse gradient positioned at the top center often looks best. */
     background-image: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(140, 37, 244, 0.15), transparent);
 }
+
 .skill-card {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .skill-card.hidden {
     display: none;
     opacity: 0;
     transform: scale(0.95);
+}
+
+.skill-card h4 {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+@media (max-width: 640px) {
+    #skills-grid .skill-card {
+        justify-content: center;
+        gap: 0;
+        padding: 0.9rem;
+    }
+
+    #skills-grid .skill-card h4 {
+        display: none;
+    }
 }
