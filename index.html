@@ -1,31 +1,42 @@
-<html class="dark" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>DevPortfolio | Portfolio de Desarrollador Moderno</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="tailwind.config.js"></script>
-<link rel="stylesheet" href="styles.css">
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>DevPortfolio | Chris Rodriguez</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary/30">
-<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
-    
-    <!-- Injection points -->
-    <div id="header-container"></div>
-    
-    <main class="flex-1 mt-20">
-        <div id="home-container"></div>
-        <div id="skills-container"></div>
-        <div id="education-container"></div>
-        <div id="projects-container"></div>
-        <div id="contact-container"></div>
-    </main>
-    
-    <div id="footer-container"></div>
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
 
-</div>
+        <!-- Inyeccion de componentes-->
+        <div id="header-container"></div>
 
-<!-- Main Script (fetches components and initializes UI) -->
-<script src="script.js"></script>
-</body></html>
+        <main class="flex-1 mt-20">
+            <div id="home-container"></div>
+            <div id="skills-container"></div>
+            <div id="education-container"></div>
+            <div id="projects-container"></div>
+            <div id="contact-container"></div>
+        </main>
+
+        <div id="footer-container"></div>
+
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
